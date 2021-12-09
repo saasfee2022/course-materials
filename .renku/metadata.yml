@@ -1,0 +1,30 @@
+'@id': https://renkulab.io/projects/vladimir.savchenko/course-materials
+'@type':
+- http://schema.org/Project
+- http://www.w3.org/ns/prov#Location
+http://schema.org/agent: 0.16.2
+http://schema.org/creator:
+  '@id': mailto:vladimir.savchenko@gmail.com
+  '@type':
+  - http://schema.org/Person
+  - http://www.w3.org/ns/prov#Person
+  http://schema.org/affiliation: null
+  http://schema.org/alternateName: null
+  http://schema.org/email: vladimir.savchenko@gmail.com
+  http://schema.org/name: Volodymyr Savchenko
+  http://www.w3.org/2000/01/rdf-schema#label: Volodymyr Savchenko
+http://schema.org/dateCreated: '2021-12-09T20:17:00.062641+00:00'
+http://schema.org/name: course-materials
+http://schema.org/schemaVersion: '8'
+https://swissdatasciencecenter.github.io/renku-ontology#automatedTemplateUpdate: false
+https://swissdatasciencecenter.github.io/renku-ontology#immutableTemplateFiles: []
+https://swissdatasciencecenter.github.io/renku-ontology#templateId: python-minimal
+https://swissdatasciencecenter.github.io/renku-ontology#templateMetadata: '{"__template_source__":
+  "https://github.com/SwissDataScienceCenter/renku-project-template", "__template_ref__":
+  "0.2.1", "__template_id__": "python-minimal", "__namespace__": "saasfee2022", "__automated_update__":
+  true, "__repository__": "https://renkulab.io/gitlab", "__sanitized_project_name__":
+  "course-materials", "__project_slug__": "saasfee2022/course-materials", "__renku_version__":
+  "0.16.2", "name": "course-materials"}'
+https://swissdatasciencecenter.github.io/renku-ontology#templateReference: 0.2.1
+https://swissdatasciencecenter.github.io/renku-ontology#templateSource: https://github.com/SwissDataScienceCenter/renku-project-template
+https://swissdatasciencecenter.github.io/renku-ontology#templateVersion: ee01a22fe6cfb6b8af1f631919e784fa3efd5c6d
