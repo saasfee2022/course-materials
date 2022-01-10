@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+pycbc=1.17.0
+lalsuite
+ligo-common
+astropy
+seaborn
+emcee<3.0.0

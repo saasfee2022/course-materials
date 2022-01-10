@@ -1,38 +1,43 @@
-# course-materials
+# Saas-Fee 2022 hand-on session materials
 
-## Introduction
+This repository will contain materials for Saas-Fee 2022 hands-on sessions.
 
-This is a Renku project - basically a git repository with some
-bells and whistles. You'll find we have already created some
-useful things like `data` and `notebooks` directories and
-a `Dockerfile`.
+For now, feel free to [start a session](https://renkulab.io/projects/saasfee2022/course-materials/sessions/new?autostart=1), find the *Welcome.ipynb* notebook, and experiment with it:
 
-## Working with the project
+<img src="renku-saas-nb-tutorial.png"/>
 
-The simplest way to start your project is right from the Renku
-platform - just click on the `Environments` tab and start a new session.
-This will start an interactive environment right in your browser.
+## Using RenkuLab
 
-To work with the project anywhere outside the Renku platform,
-click the `Settings` tab where you will find the
-git repo URLs - use `git` to clone the project on whichever machine you want.
+Although it is possible to start a session for quick investigation without a `renku` account, it is advisable that your create one.
+This way, you will be able to see list of your session (https://renkulab.io/sessions/) and even commit your work in your own fork of the course materials repository.
 
-### Changing interactive environment dependencies
+Please visit  https://renkulab.io and create an account. You can also login with GitHub, ORCID, etc.
 
-Initially we install a very minimal set of packages to keep the images small.
-However, you can add python and conda packages in `requirements.txt` and
-`environment.yml` to your heart's content. If you need more fine-grained
-control over your environment, please see [the documentation](https://renku.readthedocs.io/en/latest/user/advanced_interfaces.html#dockerfile-modifications).
+To start new session:
 
-## Project configuration
+https://renkulab.io/projects/saasfee2022/course-materials/sessions/new?autostart=1
 
-Project options can be found in `.renku/renku.ini`. In this
-project there is currently only one option, which specifies
-the default type of environment to open, in this case `/lab` for
-JupyterLab. You may also choose `/tree` to get to the "classic" Jupyter
-interface.
 
-## Moving forward
 
-Once you feel at home with your project, we recommend that you replace
-this README file with your own project documentation! Happy data wrangling!
+## Offline container image (slow or unavailable network)
+
+### Preparation before the course
+
+You will recieve a container image on an USB stick, including all of the needed data and software for the course.
+
+As previously requested, every participant should have docker installed.
+In addition, to avoid any dependency on the network, we ask everyone to download this small image in advance
+
+```bash
+$ docker pull odahub/saasfee22-offline-bootstrap:latest
+```
+
+Also, please download this small test image and put it in the current directory (mouse right click and "save link as" or equivalent; take care that the file is saved with the original name - some browsers add an extra extension to it, like ".txt"):
+
+https://www.isdc.unige.ch/~savchenk/saasfee22-welcome-and-test.sif
+
+To test that you are able to use the image, run:
+
+```bash
+$ docker run -it -v $PWD/saasfee22-welcome-and-test.sif:/image.sif -it --rm --privileged odahub/saasfee22-offline-bootstrap:latest
+```
