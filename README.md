@@ -22,7 +22,9 @@ If you are using your Renku account, you can find your session later with your w
 
 ## Offline container image (slow or unavailable network)
 
-### Preparation before the course
+We hope that the network capacity is sufficient to use renkulab for all sessons. But if not, we might want to resort to a fall-back option.
+
+### Preparation before the course 
 
 You will recieve a container image on an USB stick, including all of the needed data and software for the course.
 
@@ -42,3 +44,14 @@ To test that you are able to use the image, run:
 ```bash
 $ docker run -it -v $PWD/saasfee22-welcome-and-test.sif:/image.sif -it --rm --privileged odahub/saasfee22-offline-bootstrap:latest
 ```
+
+### Offline container during the course
+
+Find where your USB stick is mounted. It should contain a large file, `saasfee22.sif`
+
+
+```bash
+$ docker run -it -p 8888:8888 -p 8080:8080 -v [ your usb stick directory with the image ]/saasfee22.sif:/image.sif -it --rm --privileged odahub/saasfee22-offline-bootstrap:latest
+```
+
+Then, point your browser to http://localhost:8888 to access the embedded jupyterlab with all code an materials.
