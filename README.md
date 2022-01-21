@@ -55,3 +55,6 @@ $ docker run -it -p 8888:8888 -p 8080:8080 -v [ your usb stick directory with th
 ```
 
 Then, point your browser to http://localhost:8888 to access the embedded jupyterlab with all code an materials.
+
+**ATTENTION**!: Please note that your work in the offline container will only be preserved as long as you run the container. It is because it is difficult to ensure filesystem link between the container and your OS for all OS flavors. 
+To preserve the results, you would need to download then in jupyterlab interface.
