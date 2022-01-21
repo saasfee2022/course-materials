@@ -17,7 +17,8 @@ To start new session:
 
 https://renkulab.io/projects/saasfee2022/course-materials/sessions/new?autostart=1
 
-
+Note that it may take few minutes to start.
+If you are using your Renku account, you can find your session later with your work preserved.
 
 ## Offline container image (slow or unavailable network)
 
