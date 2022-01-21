@@ -4,7 +4,7 @@ This repository will contain materials for Saas-Fee 2022 hands-on sessions.
 
 For now, feel free to [start a session](https://renkulab.io/projects/saasfee2022/course-materials/sessions/new?autostart=1), find the *Welcome.ipynb* notebook, and experiment with it:
 
-<img src="renku-saas-nb-tutorial.png"/>
+![](renku-saas-nb-tutorial.png)
 
 ## Using RenkuLab
 
