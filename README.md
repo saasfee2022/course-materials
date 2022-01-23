@@ -2,6 +2,8 @@
 
 This repository will contain materials for Saas-Fee 2022 hands-on sessions.
 
+The latest version of this repository can be found here: https://renkulab.io/gitlab/saasfee2022/course-materials .
+
 For now, feel free to [start a session](https://renkulab.io/projects/saasfee2022/course-materials/sessions/new?autostart=1), find the *Welcome.ipynb* notebook, and experiment with it:
 
 ![](renku-saas-nb-tutorial.png)
