@@ -1,8 +1,9 @@
 # Saas-Fee 2022 hand-on session materials
 
-This repository will contain materials for Saas-Fee 2022 hands-on sessions.
+This repository contains materials for Saas-Fee 2022 hands-on sessions.
 
 The latest version of this repository can be found here: https://renkulab.io/gitlab/saasfee2022/course-materials .
+For further information abou the event, lease refer to the event site:  https://www.astro.unige.ch/saasfee2022/ .
 
 For now, feel free to [start a session](https://renkulab.io/projects/saasfee2022/course-materials/sessions/new?autostart=1), find the *Welcome.ipynb* notebook, and experiment with it:
 
