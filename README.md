@@ -61,3 +61,28 @@ Then, point your browser to http://localhost:8888 to access the embedded jupyter
 
 **ATTENTION**!: Please note that your work in the offline container will only be preserved as long as you run the container. It is because it is difficult to ensure filesystem link between the container and your OS for all OS flavors. 
 To preserve the results, you would need to download then in jupyterlab interface.
+
+#### Offline container on Apple M1
+
+Some of the most recent Apple laptops use M1 CPU, which is different architecture from what you'd find on most laptops and servers.
+It should be still possible to run the image with docker's support virtualization:
+
+```bash
+$ docker run --platform linux/amd64 -it -v $PWD/saasfee22-welcome-and-test.sif:/image.sif -it --rm --privileged odahub/saasfee22-offline-bootstrap:latest
+```
+
+If this still does not work, try running this first (it will start the emulator):
+
+```bash
+$ docker run --privileged --rm tonistiigi/binfmt --install all
+```
+
+And then repeat the previous command.
+
+If this still fails, try this:
+
+```bash
+$ docker run -it -v $PWD/saasfee22-welcome-and-test.sif:/image.sif -it --rm --privileged odahub/saasfee22-offline-bootstrap:latest-arm64
+```
+
+And contact us in Slack with results. Please beware that this last command is last-resort and if you have to use it, you might experience issues during the use.
