@@ -50,11 +50,13 @@ $ docker run -it -v $PWD/saasfee22-welcome-and-test.sif:/image.sif -it --rm --pr
 
 ### Offline container during the course
 
-Find where your USB stick is mounted. It should contain a large file, `saasfee22.sif`
+Find where your USB stick is mounted. It should contain a large file, `saasfee22-larger-disk.sif`
+
+You can also download the image here (but please do not do it during the course): https://www.isdc.unige.ch/~savchenk/saasfee22-larger-disk.sif
 
 
 ```bash
-$ docker run -it -p 8888:8888 -p 8080:8080 -v [ your usb stick directory with the image ]/saasfee22.sif:/image.sif -it --rm --privileged odahub/saasfee22-offline-bootstrap:latest
+$ docker run -it -p 8888:8888 -p 8080:8080 -v [ full path to your .sif image ]:/image.sif -it --rm --privileged odahub/saasfee22-offline-bootstrap:latest
 ```
 
 Then, point your browser to http://localhost:8888 to access the embedded jupyterlab with all code an materials.
@@ -63,6 +65,8 @@ Then, point your browser to http://localhost:8888 to access the embedded jupyter
 To preserve the results, you would need to download then in jupyterlab interface.
 
 #### Offline container on Apple M1
+
+**As experience shows, the following instructions might or might not work. Please consider trying, and else resort to renkulab.io**.
 
 Some of the most recent Apple laptops use M1 CPU, which is different architecture from what you'd find on most laptops and servers.
 It should be still possible to run the image with docker's support virtualization:
